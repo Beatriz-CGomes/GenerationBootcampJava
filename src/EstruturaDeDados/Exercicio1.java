@@ -38,13 +38,14 @@ public class Exercicio1 {
 				break;
 
 			case 3:
-				/*
-				 * if (filaBanco.poll() == null) {
-				 * System.out.println("\nNão tem ninguem na fila"); } else {
-				 */
-				filaBanco.poll();
-				System.out.println("\nLista depois de retirar uma pessoa  " + filaBanco);
-				// }
+
+				if (filaBanco.isEmpty()) {
+					System.out.println("A lista está vazia ");
+				} else {
+					filaBanco.poll();
+					System.out.println("\nLista depois de retirar uma pessoa  " + filaBanco);
+				}
+
 				break;
 
 			case 0:

@@ -35,11 +35,15 @@ public class Exercicio2 {
 
 			else if (opcao == 3) {
 				sc.nextLine();
+
+			} else if (livrosPilhas.isEmpty()) {
+				System.out.println("A pilah está vazia");
+			} else {
 				livrosPilhas.pop();
 				System.out.println("Lista depois que retirei livros da pilha " + livrosPilhas);
 			}
 
-			else if (opcao == 4) {
+			if (opcao == 4) {
 				sc.nextLine();
 				System.out.println("O programa da pilha de livros foi finalizado");
 			} else {
