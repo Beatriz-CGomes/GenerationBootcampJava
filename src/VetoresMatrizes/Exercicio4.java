@@ -15,7 +15,7 @@ public class Exercicio4 {
 		int numNotas = sc.nextInt();
 
 		double notas[][] = new double[num][numNotas];
-		double[] somaMedia = new double[num];
+		double[] somaMedia = new double[numNotas];
 		String[] nomes = new String[num];
 		String nome;
 
@@ -35,7 +35,7 @@ public class Exercicio4 {
 
 		}
 
-		System.out.println("Soma dos alunos é: ");
+		System.out.println("A média do aluno é:  ");
 
 		for (int i = 0; i < num; i++) {
 			for (int j = 0; j < numNotas; j++) {
@@ -45,6 +45,16 @@ public class Exercicio4 {
 
 			System.out.println(nomes[i] + " : " + somaMedia[i]);
 
+			if (somaMedia[i] >= 6.75) {
+				System.out.println("Parabéns, " + nomes[i] + " você foi aprovado ");
+				System.out.println("-------------------------");
+			} else if (somaMedia[i] >= 5.50 && somaMedia[i] <= 6.74) {
+				System.out.println(nomes[i] + " você está recuperação ");
+				System.out.println("-------------------------");
+			} else {
+				System.out.println(nomes[i] + " você foi reprovado ");
+				System.out.println("-------------------------");
+			}
 		}
 		sc.close();
 	}
