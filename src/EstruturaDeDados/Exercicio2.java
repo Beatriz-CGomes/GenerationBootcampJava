@@ -28,12 +28,12 @@ public class Exercicio2 {
 				livrosPilhas.push(livronome);
 			}
 
-			else if (opcao == 2) {
+			if (opcao == 2) {
 				sc.nextLine();
 				System.out.println("Lista de todos os livros que estão na Pilha " + livrosPilhas);
 			}
 
-			else if (opcao == 3) {
+			if (opcao == 3) {
 				sc.nextLine();
 
 			} else if (livrosPilhas.isEmpty()) {

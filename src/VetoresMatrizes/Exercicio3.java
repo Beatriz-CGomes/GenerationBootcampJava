@@ -14,6 +14,7 @@ public class Exercicio3 {
 
 		for (linha = 0; linha < valores.length; linha++) {
 			for (coluna = 0; coluna < valores.length; coluna++) {
+				
 				System.out.println("Digite o com os valores para linha e coluna");
 				valores[linha][coluna] = sc.nextInt();
 

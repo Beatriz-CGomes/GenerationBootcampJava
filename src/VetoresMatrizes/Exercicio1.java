@@ -18,6 +18,8 @@ public class Exercicio1 {
 		for (x = 0; x < num.length; x++) {
 			System.out.println("Digite o numero " + "da posição  " + x);
 			num[x] = sc.nextInt();
+			
+			
 		} // até aqui entrando com valores da soma
 
 		System.out.println("Digite o número que você deseja encontrar ");

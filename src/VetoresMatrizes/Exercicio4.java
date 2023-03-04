@@ -5,27 +5,48 @@ import java.util.Scanner;
 public class Exercicio4 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		Scanner sc = new Scanner(System.in);
 
-		float[] notas = new float[4];
-		float n1, n2, n3, n4, somaNotas;
+		System.out.println("Quantos alunos serão cadastrados? ");
+		int num = sc.nextInt();
+
+		System.out.println("Quantas notas serão cadastradas? ");
+		int numNotas = sc.nextInt();
+
+		double notas[][] = new double[num][numNotas];
+		double[] somaMedia = new double[num];
+		String[] nomes = new String[num];
 		String nome;
 
-		for (int alunos = 0; alunos < 4; alunos++) {
-			System.out.println("Digite nome do(a) aluno(a)");
-			nome = sc.nextLine();
-			System.out.println("Entre com a primeira nota");
-			n1 = sc.nextFloat();
-			System.out.println("Entre com a nota dois");
-			n2 = sc.nextFloat();
-			System.out.println("Entre com a nota tres");
-			n3 = sc.nextFloat();
-			System.out.println("Entre com a nota quatro");
-			n4 = sc.nextFloat();
+		System.out.println("Entre com dados do aluno ");
+
+		for (int i = 0; i < num; i++) {
+
+			System.out.print("Nome: " + (i + 1) + " ° ");
+			sc.next();
+			nomes[i] = sc.nextLine();
+
+			for (int j = 0; j < numNotas; j++) {
+
+				System.out.println("Entre com as notas do aluno: " + (i + 1) + " ° ");
+				notas[i][j] = sc.nextDouble();
+			}
+
 		}
 
+		System.out.println("Soma dos alunos é: ");
+
+		for (int i = 0; i < num; i++) {
+			for (int j = 0; j < numNotas; j++) {
+				somaMedia[i] += (notas[i][j]) / numNotas;
+
+			}
+
+			System.out.println(nomes[i] + " : " + somaMedia[i]);
+
+		}
+		sc.close();
 	}
 
 }
