@@ -17,7 +17,6 @@ public class Exercicio4 {
 		double notas[][] = new double[num][numNotas];
 		double[] somaMedia = new double[numNotas];
 		String[] nomes = new String[num];
-		String nome;
 
 		System.out.println("Entre com dados do aluno ");
 
@@ -29,7 +28,7 @@ public class Exercicio4 {
 
 			for (int j = 0; j < numNotas; j++) {
 
-				System.out.println("Entre com as notas do aluno: " + (i + 1) + " ° ");
+				System.out.println("Entre com as notas do aluno: " + (j + 1) + " ° ");
 				notas[i][j] = sc.nextDouble();
 			}
 
