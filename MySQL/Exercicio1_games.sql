@@ -57,9 +57,7 @@ SELECT * FROM tb_classes;
 SELECT * FROM tb_personagens;
 
 ALTER TABLE tb_personagens ADD classes_id bigint;
-
-ALTER TABLE tb_personagens ADD CONSTRAINT fk_personagens_classes
-FOREIGN KEY (classes_id) REFERENCES tb_classes(id);
+ALTER TABLE tb_personagens ADD CONSTRAINT fk_personagens_classes FOREIGN KEY (classes_id) REFERENCES tb_classes(id);
 
 SELECT * FROM tb_personagens WHERE ataque >  2000;
 
@@ -69,5 +67,6 @@ SELECT * FROM tb_personagens WHERE nome LIKE "C%";
 
 SELECT * FROM tb_personagens;
 
-SELECT * FROM tb_personagens
-INNER JOIN tb_classes ON tb_classes.id = tb_personagens.classes_id;
+SELECT * FROM tb_personagens INNER JOIN tb_classes ON tb_classes.id = tb_personagens.classes_id;
+
+SELECT * FROM tb_personagens INNER JOIN tb_classes ON tb_classes.id = tb_personagens.classes_id WHERE preco > 50;

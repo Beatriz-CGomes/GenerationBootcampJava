@@ -57,15 +57,14 @@ VALUE ("Brocolis ", 1 , 50.89, "Brocolis com Queijo",  4);
 
 SELECT * FROM tb_pizzas;
 
-SELECT * FROM tb_pizzas
-INNER JOIN tb_categorias ON tb_categorias.id = tb_pizzas.categorias_id;
+SELECT * FROM tb_pizzas WHERE preco > 45;
 
-SELECT * FROM tb_pizzas
-INNER JOIN tb_categorias ON tb_categorias.id = tb_pizzas.categorias_id
-WHERE categorias_id = 2;
+SELECT * FROM tb_pizzas WHERE preco BETWEEN  50 AND 100;
 
-SELECT * FROM tb_personagens WHERE preco >  545;
+SELECT * FROM tb_pizzas WHERE nome LIKE "%C%";
 
-SELECT * FROM tb_personagens WHERE preco BETWEEN  50 AND 100;
+SELECT * FROM tb_pizzas INNER JOIN tb_categorias ON tb_categorias.id = tb_pizzas.categorias_id;
+
+SELECT * FROM tb_pizzas INNER JOIN tb_categorias ON tb_categorias.id = tb_pizzas.categorias_id WHERE categorias_id = 2;
 
 SELECT * FROM tb_categorias;
