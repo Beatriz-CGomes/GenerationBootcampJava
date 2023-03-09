@@ -32,28 +32,28 @@ PRIMARY KEY (id)
 );
 
 INSERT INTO tb_produtos(nome, quantidade, preco, tipo, categoria_id)
-VALUE ("Coelho", 3, 23.99, "Carne Branca", 1);
+VALUES ("Coelho", 3, 23.99, "Carne Branca", 1);
 
 INSERT INTO tb_produtos(nome, quantidade, preco, tipo, categoria_id)
-VALUE ("Ganso", 2, 43.99, "Carne Branca", 1);
+VALUES ("Ganso", 2, 43.99, "Carne Branca", 1);
 
 INSERT INTO tb_produtos(nome, quantidade, preco, tipo, categoria_id)
-VALUE ("Barriga", 12, 23.99, "Carne suína", 2);
+VALUES ("Barriga", 12, 23.99, "Carne suína", 2);
 
 INSERT INTO tb_produtos(nome, quantidade, preco, tipo, categoria_id)
-VALUE ("Fraldinha", 2, 33.99, "Carne suína", 2);
+VALUES ("Fraldinha", 2, 33.99, "Carne suína", 2);
 
 INSERT INTO tb_produtos(nome, quantidade, preco, tipo, categoria_id)
-VALUE ("Picanha", 12, 73.99, "Carne bovina", 3);
+VALUES ("Picanha", 12, 73.99, "Carne bovina", 3);
 
 INSERT INTO tb_produtos(nome, quantidade, preco, tipo, categoria_id)
 VALUE ("Coxão mole", 20, 53.99, "Carne bovina", 3);
 
 INSERT INTO tb_produtos(nome, quantidade, preco, tipo, categoria_id)
-VALUE ("Frango", 23, 23.99, "Carne Branca", 4);
+VALUES ("Frango", 23, 23.99, "Carne Branca", 4);
 
 INSERT INTO tb_produtos(nome, quantidade, preco, tipo, categoria_id)
-VALUE ("Peixe", 12, 43.99, "Carne Branca", 4);
+VALUES ("Peixe", 12, 43.99, "Carne Branca", 4);
 
 SELECT * FROM tb_produtos;
 
